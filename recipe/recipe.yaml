@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.2.4"
+  version: 0.2.5
 
 package:
   name: pyfock
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pyfock/pyfock-${{ version }}.tar.gz
-  sha256: a60c1157e690cd564588805386be1f78793aef3f98e0702a162732f110c44efb
+  sha256: d9e9dbaee0f56d17db68073164dddffadfbcb10d01fefd887db088820298998f
 
 build:
   number: 0
@@ -42,7 +42,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}
-        - "*"
+        - '*'
 
 about:
   summary: A simplistic and efficient pure-python quantum chemistry library from Phys Whiz.
